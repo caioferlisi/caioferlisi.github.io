@@ -1,0 +1,194 @@
+/* Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #333;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007acc;
+}
+
+/* Main */
+main {
+  padding: 40px 20px;
+}
+
+/* Seções */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  min-height: 80vh;
+}
+
+.item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Foto de perfil */
+#profile {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #007acc;
+}
+
+/* Títulos e parágrafos */
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+h1 span {
+  color: #007acc;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Formulário */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+form textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Tabela de Projetos */
+#table-projetos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+#table-projetos th,
+#table-projetos td {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  vertical-align: top;
+  text-align: left;
+}
+
+#table-projetos th {
+  background-color: #007acc;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+#table-projetos tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .item {
+    padding: 20px;
+  }
+
+  #profile {
+    width: 120px;
+    height: 120px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  form {
+    padding: 0 10px;
+  }
+}
